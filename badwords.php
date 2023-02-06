@@ -8,7 +8,7 @@ $text = $_GET['text'];
 $censured_text = str_replace($bad_word, '***' , $text);
 
 $original_length = strlen($text);
-$filtredtesxt_length = strlen($censured_text);
+$filtredtext_length = strlen($censured_text);
 
 
 ?>
@@ -40,7 +40,7 @@ $filtredtesxt_length = strlen($censured_text);
         <div class="border p-5">
             <h1>Testo censurato:</h1>
             <p><?=$censured_text ?></p>
-            <h4>Lunghezza testo: <span class="text-success"><?= $filtredtesxt_length?> </span> </h4>
+            <h4>Lunghezza testo: <span class="text-success"><?= $filtredtext_length?> </span> </h4>
         </div>
     </div>
 </body>
